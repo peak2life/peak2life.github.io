@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://blog.begit.cn</id>
+    <id>http://blog.begit.cn</id>
     <title>peak2life</title>
-    <updated>2019-08-30T07:13:54.627Z</updated>
+    <updated>2019-08-30T07:22:59.517Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://blog.begit.cn"/>
-    <link rel="self" href="https://blog.begit.cn/atom.xml"/>
+    <link rel="alternate" href="http://blog.begit.cn"/>
+    <link rel="self" href="http://blog.begit.cn/atom.xml"/>
     <subtitle>物来顺应 未来不迎 当事不杂 季过不恋</subtitle>
-    <logo>https://blog.begit.cn/images/avatar.png</logo>
-    <icon>https://blog.begit.cn/favicon.ico</icon>
+    <logo>http://blog.begit.cn/images/avatar.png</logo>
+    <icon>http://blog.begit.cn/favicon.ico</icon>
     <rights>All rights reserved 2019, peak2life</rights>
 </feed>
