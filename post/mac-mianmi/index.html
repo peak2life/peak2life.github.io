@@ -5,7 +5,7 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>
-    peak2life
+    Mac 免密登录 | peak2life
 </title>
 <link rel="shortcut icon" href="https://peak2life.github.io//favicon.ico?v=1567152832661">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
@@ -19,6 +19,14 @@
 <script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
 
+        
+            
+                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+                <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+                
+
+                    
+                            
 </head>
 
 <body>
@@ -93,53 +101,44 @@
     });
 </script>
 
-            <div id="main-content" class="post-container main-container">
+            <div id="main-content" class="post-detail main-container">
+                <!-- left -->
                 <div id="content" class="main-container-left">
-                    
-        
-            <article class="post i-card">
-                <h2 class="post-title">
-                    <a href="https://peak2life.github.io//post/mac-mianmi">
-                        Mac 免密登录
-                    </a>
-                </h2>
-                <div class="post-info">
-                    <time class="post-time">2019-08-30</time>
-                    
-                        <a href="https://peak2life.github.io//tag/lvVqai7kYM" class="post-tag i-tag
-                            i-tag-error">
-            #mac
-        </a>
-                        
-                </div>
-                <div class="post-article">
-                    
-                            <div class="post-content">
+                    <article class="post i-card">
+                        <h2 class="post-title">
+                            Mac 免密登录
+                        </h2>
+                        <div class="post-info">
+                            <time class="post-time">2019-08-30</time>
+                            
+                                <a href="https://peak2life.github.io//tag/lvVqai7kYM" class="post-tag i-tag
+                            i-tag-banana">
+                            #mac
+                        </a>
                                 
-                                        <div class="post-content-content">
-                                            
-复制本级公钥到服务器scp ~/.ssh/id_rsa.pub &amp;lt;用户名&amp;gt;@&amp;lt;ip地址&amp;gt;:/home/id_rsa.pub
-登录远程服务器，把第一步上传到公钥追加到服务器授权文件中cat /home/id_rsa.pub &amp;gt;&amp;gt; ~/.ssh/authorized_keys
-本地即可免密登录ssh -p &amp;lt;端口号&amp;gt; &amp;lt;用户名&amp;gt;@&amp;lt;ip地址&amp;gt;
+                        </div>
+                        
+                                <div class="post-content">
+                                    <ol>
+<li>复制本级公钥到服务器scp ~/.ssh/id_rsa.pub &lt;用户名&gt;@&lt;ip地址&gt;:/home/id_rsa.pub</li>
+<li>登录远程服务器，把第一步上传到公钥追加到服务器授权文件中cat /home/id_rsa.pub &gt;&gt; ~/.ssh/authorized_keys</li>
+<li>本地即可免密登录ssh -p &lt;端口号&gt; &lt;用户名&gt;@&lt;ip地址&gt;</li>
+</ol>
 
-
-                                        </div>
-                                        
-                                            <a class="btn btn-text" href="https://peak2life.github.io//post/mac-mianmi">Read More ~</a>
-                            </div>
-                </div>
-            </article>
-            
-                <!-- 翻页 -->
-                
-                </div>
-                <!--  -->
-                <div class="main-container-middle"></div>
-                <!--  -->
-                <div id="sidebar" class="main-container-right">
-
-                    <!-- 个人信息 -->
+                                </div>
+                    </article>
+                    <!--  -->
                     
+                            <div id="disqus_thread"></div>
+                            <div id="gitalk-container"></div>
+                </div>
+                <!-- middle -->
+                <div class="main-container-middle"></div>
+                <!-- right -->
+                <div id="sidebar" class="main-container-right">
+                    
+                                <!-- id-card -->
+                                
     <div class="id_card i-card">
         <div class="id_card-avatar" style="background-image: url(https://peak2life.github.io//images/avatar.png?v=1567152832661)">
         </div>
@@ -166,20 +165,14 @@
         </div>
     </div>
     
-
-                        <!-- 公告栏 -->
-                        
-    <div class="notice-card i-card ">
-        <div class="notice-title i-card-title">公告</div>
-        <div class="notice-content">
-            不安的心
-        </div>
-    </div>
-    
+                                    
 
                 </div>
-            </div>
 
+
+
+
+            </div>
 
 
             <div class="site-footer">
@@ -191,6 +184,7 @@
   hljs.initHighlightingOnLoad()
 </script>
 
+
     </div>
     <script>
         $('#sidebar').stickySidebar({
@@ -198,6 +192,27 @@
             // bottomSpacing: 60
         });
     </script>
+    
+        
+            <script>
+    window.onload = function() {
+        var gitalk = new Gitalk({
+            clientID: '55326147032e3cd89cb0',
+            clientSecret: '55b652abb45d02033ec733d3445514bf971eccfe',
+            repo: 'peak2life.github.io',
+            owner: 'peak2life',
+            admin: ['peak2life'],
+            id: (location.pathname).substring(0, 49), // Ensure uniqueness and length less than 50
+            distractionFreeMode: false // Facebook-like distraction free mode
+        })
+
+        gitalk.render('gitalk-container')
+    }
+</script>
+                
+
+                    
+                                
 </body>
 
 </html>
